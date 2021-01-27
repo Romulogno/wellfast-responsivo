@@ -1,0 +1,72 @@
+@charset "UTF-8";
+
+/* Fonte principal definida RALEWAY */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Definindo as cores que o site usara e variaveis para cada cor*/
+:root {
+    --cor01:white;
+
+}
+
+/* Aplicando border box em todo o site para que o tamanho das caixas seja calculado junto com a borda e padding*/
+*{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+    background-color: white;
+
+}
+
+
+/* HEADER*/
+.header-flex{
+    display: flex;
+    flex-direction: column;
+    box-shadow: 1px 1px rgba(0, 0, 0, 0.082);
+}
+
+.logo-pqn{
+   margin: 2px auto;  
+   
+}
+
+a.menu{
+    text-decoration: none;
+    padding: 8px 20px;
+    text-align: center;
+    color: black;
+    border-top: 1px solid rgba(0, 0, 0, 0.034);
+}    
+
+a:hover{
+    background-color:  rgba(0, 0, 0, 0.850);
+    color: white;
+}
+
+/*Bloco Empresa */
+
+.empresa {
+    display: flex;
+}
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 600px) {
+    .header-flex{
+        flex-direction: row;
+    }
+    a.menu {
+    padding: 35px 20px;
+    }  
+    .logo-pqn {
+        background-color: rgba(0, 0, 0, 0.000);
+        margin-left: 10px;
+    }
+
+}
