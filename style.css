@@ -14,7 +14,7 @@
     box-sizing: border-box;
     margin: 0;
     font-family: 'Raleway', sans-serif;
-    background-color: white;
+    
 
 }
 
@@ -24,11 +24,16 @@
     display: flex;
     flex-direction: column;
     box-shadow: 1px 1px rgba(0, 0, 0, 0.082);
+    background-color: rgba(0, 0, 0, 0.103);
 }
 
 .logo-pqn{
-   margin: 2px auto;  
+   margin: 2px auto;
    
+}
+
+.logo-pqn img{
+    border-radius: 8px;
 }
 
 a.menu{
@@ -45,18 +50,61 @@ a:hover{
 }
 
 /*Bloco Empresa */
-
-.empresa {
+.imagem-emp {
     display: flex;
+    background: url(imagens/mac.jpg) no-repeat center; 
+    background-size: cover;
+    height: 500px;
+    position: relative;
+}
+
+div.text-container {
+    position: absolute;
+    color: rgba(255, 255, 255, 0.863);
+    font-size: 20pt;
+    margin: 20% 7% 20% 7%;
+    line-height: 40px;
+}
+
+p.text2{
+   margin-top: 40px;
+   font-size: 12pt;
+   line-height: 20px;
+}
+
+div.botao1{
+    margin-top: 200px;
+    background-color: rgba(255, 255, 255, 0.589);
+    margin-top: 30px;
+    color: rgba(0, 0, 0, 0.815);
+    font-size: 0.6em;
+    text-align: center;
+    padding: 5px;
+    width: 280px;
+    box-shadow: 1px 1px 2px rgba(250, 250, 250, 0.26);
+}
+div.botao1:hover {
+    background-color: rgba(255, 255, 255, 0.815);
+}
+
+div.icones{
+    position: absolute;
+    margin-top: 460px;
+    margin-left: 30px;
+    font-size: 1.3em;
+}
+
+div.icones a{
+    color: rgba(255, 255, 255, 0.301);
+    
+}
+
+div.icones a:hover{
+    color: rgba(255, 255, 255, 0.205);
 }
 
 
-
-
-
-
-
-
+/* Layout responsivo para laptops*/
 @media only screen and (min-width: 600px) {
     .header-flex{
         flex-direction: row;
@@ -67,6 +115,31 @@ a:hover{
     .logo-pqn {
         background-color: rgba(0, 0, 0, 0.000);
         margin-left: 10px;
+    }
+    .imagem-emp {
+        height: 700px;
+    }
+    div.text-container {
+        font-size: 35pt;
+        margin: 10% 10% 20% 5%;
+        line-height: 60px;
+        max-width: 800px;
+    }
+    p.text2{
+        margin-top: 35px;
+        font-size: 15pt;
+        line-height: 25px;
+     }
+     div.botao1{
+        margin-top:50px ;
+        width: 360px;
+        font-size: 0.4em;
+     }
+     div.icones{
+        position: absolute;
+        margin-top: 620px;
+        margin-left: 75px;
+        font-size: 2em;
     }
 
 }
