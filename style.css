@@ -28,7 +28,7 @@
 }
 
 .logo-pqn{
-   margin: 2px auto;
+   margin: 4px auto;
    
 }
 
@@ -117,7 +117,7 @@ div.icones a:hover{
         margin-left: 10px;
     }
     .imagem-emp {
-        height: 700px;
+        height: 655px;
     }
     div.text-container {
         font-size: 35pt;
@@ -137,7 +137,7 @@ div.icones a:hover{
      }
      div.icones{
         position: absolute;
-        margin-top: 620px;
+        margin-top: 580px;
         margin-left: 75px;
         font-size: 2em;
     }
