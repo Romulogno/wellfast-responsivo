@@ -128,15 +128,16 @@ div.icones a:hover{
 }
 
 .square {
-    font-size: 3vw;
+    font-size: 9px;
     text-align: center;
-    border: 1px solid rgb(248, 164, 7);
+    border: 1px solid rgba(248, 7, 7, 0.432);
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.100);
     width: 220px;
-    height: 180px;
+    height: 220px;
     margin: 30px auto;
     border-radius: 5px;
     padding: 13px;
+    padding-top: 4px;
 }
 
 .square img{
@@ -189,42 +190,70 @@ div.icones a:hover{
     /* Terceira parte para laptops*/
 
     .container-proj{
+        display: flex;
         flex-direction: row;
+        min-height: 850px; ;
     }
 
     .square-container{
-        border: 1px solid black;
     }
 
     .proj-text{
-        border: 1px solid black;
-        max-width: 50%;
-        height: 700px;
-        padding-top: 200px;
+        max-width: 45%;
+        padding-top: 300px;
         padding-left: 100px;
         text-align: left;
     }
 
     .proj-text h2 {
         font-weight: 600;
-        font-size: 2.5vw;
-        line-height: 40px;
+        font-size: 2.9vw;
+        line-height: 60px;
     }
 
     .square-container{
         display: flex;
         flex-wrap: wrap;
-        width: 50%;
-        border: 1px solid rgb(221, 38, 38);
-        align-content: flex-start;
-        justify-content: space-between  ;
+        width: 55%;
+        align-content: center;
+        padding-right: 120px;
+
     }
     .square {
-        font-size: 0.8vw;
-        margin-top: 50px;
-        width: 250px;
-        height: 210px;
+        font-size: 16px;
+        margin-top: 100px;
+        margin-bottom: 15px;
+        margin-right: 15px;
+        margin-left: 15px;
+        padding: 15px;
+        width: 270px;
+        height: 270px;
 
     }
 
+    .square img{
+        width: 85px;
+        height: 85px;
+        border-radius: 50%;}
+    
+    .square2{
+        margin-top: 130px;
+        margin-left: 25px;
+    }
+    .mail{
+        margin-top: 0px;
+    }
+
+    .suporte{
+        margin-top: 30px;
+    }
+
+}
+
+
+@media only screen and (max-width:768px) {
+    .square {
+        width: 150px;
+        height: 150px;
+    }
 }
