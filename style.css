@@ -54,6 +54,7 @@ a:hover{
     background-size: cover;
     height: 500px;
     position: relative;
+    margin-bottom: 50px;
 }
 
 div.text-container {
@@ -101,65 +102,136 @@ div.icones a:hover{
     color: rgba(255, 255, 255, 0.205);
 }
 
-/* Terceira parte Projetos*/
+/* Terceira parte Projetos mobile*/
 
-.container-proj {
+.row{
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
 }
 
-.proj-text {
-    padding:30px 15px;
-    text-align: center;
+.left {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 40%;
+    padding: 40px;
+    align-content: center;
 }
 
-.proj-text h2{
-    font-family: sans-serif;
-    line-height: 30px;
-    font-weight: 800;
-    margin-top: 30px;
+.left h2{
+    font-size: 35px;
     margin-bottom: 30px;
 }
 
-.proj-text p{
-    line-height: 25px;
-    font-weight: 500;
+.left p{
+    margin-bottom: 30px;
+}
+
+.right {
+    display: flex;
+    flex: 60%;
+    padding-top: 50px;
+    flex-wrap: wrap;
+    padding-bottom: 100px;
+    justify-content: center;
 }
 
 .square {
-    font-size: 9px;
-    text-align: center;
     border: 1px solid rgba(248, 7, 7, 0.432);
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.100);
-    width: 220px;
-    height: 220px;
-    margin: 30px auto;
-    border-radius: 5px;
-    padding: 13px;
-    padding-top: 4px;
-}
+    height: 250px;
+    width: 300px;
+    margin: 20px;
+    text-align: center;
+    padding: 15px;        }
 
 .square img{
-    width: 65px;
-    height: 65px;
+    height: 100px;
+    width: 100px;
     border-radius: 50%;
+    object-fit: cover;
+}
+
+.botao {
+    text-align: center;
+    width: 170px;
+    padding: 15px;
+    font-size: 20px;
+    background-image: linear-gradient(to right,  rgba(0, 0, 255, 0.87), rgba(76, 0, 130, 0.664));
+    color: white;
+    border-radius: 3px;
+    text-decoration: none;
 }
 
 
 
 
-
-/* Layout responsivo para laptops*/
-@media only screen and (min-width: 600px) {
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    a.menu{
+        padding: 35px 20px;
+    }
+     .logo-pqn {
+        margin-left: 10px;
+    }
     .header-flex{
         flex-direction: row;
     }
-    a.menu {
-    padding: 35px 20px;
-    }  
+    .square{
+      height: 200px;
+      width: 200px;
+      font-size: 14px;
+      padding:7px;
+      margin: 10px;
+    }
+    .square img{
+    height: 70px;
+    width: 70px;
+    } 
+    .left h2{
+        font-size: 26px;
+    }
+
+  /* Large devices (laptops/desktops, 992px and up) */
+  @media only screen and (min-width: 992px) {
+    a.menu{
+        padding: 35px 20px;
+    }
     .logo-pqn {
-        background-color: rgba(0, 0, 0, 0.000);
+        margin-left: 10px;
+    }
+    .square{
+        height: 250px;
+        width: 250px;
+        font-size: 14px;
+        padding:7px;
+        margin: 10px;
+      }
+      .square img{
+      height: 70px;
+      width: 70px;
+      } 
+      .left h2{
+          font-size: 35px;
+      }
+      div.botao1{
+        margin-top:10px ;
+        width: 340px;
+        font-size: 0.6em;
+     }
+}
+
+
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+/* Primeira parte */
+@media only screen and (min-width: 1200px) {
+    a.menu{
+        padding: 35px 20px;
+    }
+    .header-flex{
+        flex-direction: row;
+    }
+    .logo-pqn {
         margin-left: 10px;
     }
     .imagem-emp {
@@ -188,72 +260,61 @@ div.icones a:hover{
         font-size: 2em;
     }
     /* Terceira parte para laptops*/
-
-    .container-proj{
-        display: flex;
-        flex-direction: row;
-        min-height: 850px; ;
-    }
-
-    .square-container{
-    }
-
-    .proj-text{
-        max-width: 45%;
-        padding-top: 300px;
-        padding-left: 100px;
-        text-align: left;
-    }
-
-    .proj-text h2 {
-        font-weight: 600;
-        font-size: 2.9vw;
-        line-height: 60px;
-    }
-
-    .square-container{
+    .row{
         display: flex;
         flex-wrap: wrap;
-        width: 55%;
-        align-content: center;
-        padding-right: 120px;
-
     }
-    .square {
-        font-size: 16px;
-        margin-top: 100px;
-        margin-bottom: 15px;
-        margin-right: 15px;
-        margin-left: 15px;
-        padding: 15px;
-        width: 270px;
-        height: 270px;
-
-    }
-
-    .square img{
-        width: 85px;
-        height: 85px;
-        border-radius: 50%;}
     
-    .square2{
-        margin-top: 130px;
-        margin-left: 25px;
+    .left {
+        display: flex;
+        flex-wrap: wrap;
+        flex: 40%;
+        padding: 40px;
+        align-content: center;
     }
-    .mail{
-        margin-top: 0px;
+    
+    .left h2{
+        font-size: 35px;
+        margin-bottom: 30px;
     }
-
-    .suporte{
-        margin-top: 30px;
+    
+    .left p{
+        margin-bottom: 30px;
     }
-
-}
-
-
-@media only screen and (max-width:768px) {
+    
+    .right {
+        display: flex;
+        flex: 60%;
+        padding-left: 20px;
+        padding-top: 50px;
+        flex-wrap: wrap;
+        padding-bottom: 100px;
+    }
+    
     .square {
-        width: 150px;
-        height: 150px;
+        border: 1px solid rgba(248, 7, 7, 0.432);
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.100);
+        height: 250px;
+        width: 300px;
+        margin: 20px;
+        text-align: center;
+        padding: 15px;
+        font-size: 15px ;       
     }
-}
+    
+    .square img{
+        height: 100px;
+        width: 100px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+    
+    .botao {
+        text-align: center;
+        width: 170px;
+        padding: 15px;
+        font-size: 20px;
+    }
+
+
+
