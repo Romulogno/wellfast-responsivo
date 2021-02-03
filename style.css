@@ -269,7 +269,7 @@ div.icones a:hover{
         display: flex;
         flex-wrap: wrap;
         flex: 40%;
-        padding: 40px;
+        padding: 40px 10px 40px 70px;
         align-content: center;
     }
     
