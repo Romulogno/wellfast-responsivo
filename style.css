@@ -162,6 +162,26 @@ div.icones a:hover{
     text-decoration: none;
 }
 
+/* Quarta parte*/
+
+section#icones {
+    text-align: center;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+section#icones h3 {
+    font-size: 30px;
+    margin: auto;
+}
+
+div.quadro {
+    margin: 10px auto;
+    width: 300px;
+    padding: 30px;
+
+}
+
 
 
 
@@ -191,6 +211,21 @@ div.icones a:hover{
         font-size: 26px;
     }
 
+    /*Quarta Parte tablet*/ 
+    section#icones {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    div.quadro {
+        margin: 20px auto;
+    }
+
+    section#icones h3 {
+    
+    }
+
+
   /* Large devices (laptops/desktops, 992px and up) */
   @media only screen and (min-width: 992px) {
     a.menu{
@@ -219,6 +254,14 @@ div.icones a:hover{
         font-size: 0.6em;
      }
 }
+
+/*Quarta parte laptops medium*/
+
+section#icones H3 {
+    margin:50px auto;
+    min-width: 750px;
+
+   }
 
 
 
@@ -316,5 +359,23 @@ div.icones a:hover{
         font-size: 20px;
     }
 
+    /*Quarta parte laptops large*/
+    section#icones H3 {
+     min-width: 1100px;
 
-
+    }
+    section#icones {
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+        font-size: 22px;
+        
+    }
+    
+    div.quadro {
+        margin: 30px auto;
+        width: 400px;
+        height: 300px;
+        padding: 30px;
+    
+    }
